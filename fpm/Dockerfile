@@ -16,3 +16,5 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) gd
 
 RUN docker-php-ext-install pdo_mysql
+
+RUN docker-php-ext-enable opcache
